@@ -5,13 +5,9 @@ Created a HTML form to get the details of the user or to connect with the user u
 Added .gitignore file to ignore node_modules file
 Added Readme file
 
-------------------------
-
-* Readme File *
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Adding contact form in portfolio mobile"
+## Adding contact form in portfolio mobile"
 
 > Here you will see my Portfolio Mobile Version where I created the HTML form to get the user details and to connect with him with the help of formspree.
 
