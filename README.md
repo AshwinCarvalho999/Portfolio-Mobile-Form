@@ -1,10 +1,3 @@
-Added index.html
-Added style.css
-Added Linters
-Created a HTML form to get the details of the user or to connect with the user using formspree
-Added .gitignore file to ignore node_modules file
-Added Readme file
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## Adding contact form in portfolio mobile"
