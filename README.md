@@ -17,7 +17,9 @@ Added Readme file
 
 ## Built With
 
-- Html and CSS
+- HTML
+- CSS
+- Javascript
 
 ## Author
 
