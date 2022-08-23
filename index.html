@@ -3,222 +3,271 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bafe6405e0.js"
+      crossorigin="anonymous"
+    ></script>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <div class="container">
-      <header class="header">
-        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
-        <p id="description" class="description text-center">
-          Thank you for taking the time to help us improve the platform
+    <header>
+      <div id="header-mobile">
+        <a href="#">
+          <img
+            class="logo"
+            src="images/ultimate-AC-logo.png"
+            alt="logo, go to home"
+          />
+        </a>
+        <nav class="menu">
+          <a class="hamburger">
+            <img src="images/icon-menu.png" alt="Menu Button" />
+          </a>
+          <div class="mobile-menu">
+            <ul id="cls-modal">
+              <li>
+                <a class="nav-links x-button"
+                  ><i class="fa-solid fa-xmark"></i
+                ></a>
+              </li>
+              <li>
+                <a class="nav-links" href="#recent-works">Portfolio</a>
+              </li>
+              <li>
+                <a class="nav-links" href="#aboutme">About</a>
+              </li>
+              <li>
+                <a class="nav-links" href="#contact-me">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div id="header-desktop">
+        <a href="#">
+          <img
+            class="logo"
+            src="images/ultimate-AC-logo.png"
+            alt="logo, go to home"
+          />
+        </a>
+        <nav>
+          <ul class="desktop-nav">
+            <li>
+              <a class="desktop-nav-links" href="#recent-works">Recent Works</a>
+            </li>
+            <li>
+              <a class="desktop-nav-links" href="#aboutme">About</a>
+            </li>
+            <li>
+              <a class="desktop-nav-links" href="#contact-me">Contact</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  class="email-icon"
+                  src="images/icon-mail.png"
+                  alt="email contact"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="wrap-intro">
+        <h1>Hey There.<br />I'm Ashwin</h1>
+        <h2>I'm a Software Developer</h2>
+        <p>
+          I can help you build a product , feature or website. Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hestiate to contact me.
         </p>
-      </header>
-      <form id="survey-form">
-        <div class="form-group">
-          <label id="name-label" for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="form-control"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label id="email-label" for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            placeholder="Enter your Email"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label id="number-label" for="number"
-            >Age<span class="clue">(optional)</span></label
-          >
-          <input
-            type="number"
-            name="age"
-            id="number"
-            min="10"
-            max="99"
-            class="form-control"
-            placeholder="Age"
-          />
-        </div>
-        <div class="form-group">
-          <p>Which option best describes your current role?</p>
-          <select id="dropdown" name="role" class="form-control" required>
-            <option disabled selected value>Select current role</option>
-            <option value="student">Student</option>
-            <option value="job">Full Time Job</option>
-            <option value="learner">Full Time Learner</option>
-            <option value="preferNo">Prefer not to say</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
+      </div>
+      <ul class="social-icons">
+        <li>
+          <a aria-label="github" href="#" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="linkedin" href="#" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="angellist" href="#" target="_blank"
+            ><i class="fa-brands fa-angellist"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="twitter" href="#" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="medium" href="#" target="_blank"
+            ><i class="fa-brands fa-medium"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
 
-        <div class="form-group">
-          <p>Would you recommend freeCodeCamp to a friend?</p>
-          <label>
-            <input
-              name="user-recommend"
-              value="definitely"
-              type="radio"
-              class="input-radio"
-              checked
-            />Definitely</label
-          >
-          <label>
-            <input
-              name="user-recommend"
-              value="maybe"
-              type="radio"
-              class="input-radio"
-            />Maybe</label
-          >
+    <section id="recent-works">
+      <div class="recent-works-headline">
+        <h3>My Recent Works</h3>
+      </div>
+      <div class="line-divisor">
+        <hr />
+      </div>
+    </section>
 
-          <label
-            ><input
-              name="user-recommend"
-              value="not-sure"
-              type="radio"
-              class="input-radio"
-            />Not sure</label
-          >
-        </div>
+    <section id="aboutme">
+      <h2>About me</h2>
+      <p>
+        Hello I'm a software developer! I can help you build a product , feature
+        or website. Look through some of my work and experience! If you like
+        what you see and have a project you need coded, don't hestiate to
+        contact me.
+      </p>
+      <div class="get-resume small-button">
+        <a href="#">Get my resume</a>
+      </div>
+    </section>
 
-        <div class="form-group">
-          <p>What is your favorite feature of freeCodeCamp?</p>
-          <select id="most-like" name="mostLike" class="form-control" required>
-            <option disabled selected value>Select an option</option>
-            <option value="challenges">Challenges</option>
-            <option value="projects">Projects</option>
-            <option value="community">Community</option>
-            <option value="openSource">Open Source</option>
-          </select>
-        </div>
+    <div class="skills">
+      <ul id="title1">
+        <li>
+          <img
+            src="images/square2.png"
+            alt="diamond-shapped bullet point"
+          />&nbsp; Language &nbsp;&nbsp;&nbsp;
+        </li>
+        <li class="items">Javascript</li>
+        <li class="items">Ruby</li>
+        <li class="items">Html</li>
+        <li class="items">CSS</li>
+      </ul>
 
-        <div class="form-group">
-          <p>
-            What would you like to see improved?
-            <span class="clue">(Check all that apply)</span>
-          </p>
+      <ul id="title2">
+        <li>
+          <img
+            src="images/square1.png"
+            alt="squared-shapped bullet point"
+          />&nbsp; Frameworks &nbsp;&nbsp;&nbsp;
+        </li>
+        <li class="items">Bootstrap</li>
+        <li class="items">Ruby on Rails</li>
+        <li class="items">RSPec</li>
+        <li class="items">CapyBara</li>
+        <li class="items">Selenium</li>
+      </ul>
 
-          <label
-            ><input
-              name="prefer"
-              value="front-end-projects"
-              type="checkbox"
-              class="input-checkbox"
-            />Front-end Projects</label
-          >
-          <label>
-            <input
-              name="prefer"
-              value="back-end-projects"
-              type="checkbox"
-              class="input-checkbox"
-            />Back-end Projects</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="data-visualization"
-              type="checkbox"
-              class="input-checkbox"
-            />Data Visualization</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="challenges"
-              type="checkbox"
-              class="input-checkbox"
-            />Challenges</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="open-source-community"
-              type="checkbox"
-              class="input-checkbox"
-            />Open Source Community</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="gitter-help-rooms"
-              type="checkbox"
-              class="input-checkbox"
-            />Gitter help rooms</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="videos"
-              type="checkbox"
-              class="input-checkbox"
-            />Videos</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="city-meetups"
-              type="checkbox"
-              class="input-checkbox"
-            />City Meetups</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="wiki"
-              type="checkbox"
-              class="input-checkbox"
-            />Wiki</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="forum"
-              type="checkbox"
-              class="input-checkbox"
-            />Forum</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="additional-courses"
-              type="checkbox"
-              class="input-checkbox"
-            />Additional Courses</label
-          >
-        </div>
+      <ul id="title3">
+        <li>
+          <img src="images/round.png" alt="round-shapped bullet point" />&nbsp;
+          Skills &nbsp;&nbsp;&nbsp;
+        </li>
+        <li class="items">Codekit</li>
+        <li class="items">Github</li>
+        <li class="items">Codepen</li>
+        <li class="items">Gitlab</li>
+        <li class="items">Terminal</li>
+      </ul>
+    </div>
 
-        <div class="form-group">
-          <p>Any comments or suggestions?</p>
-          <textarea
-            id="comments"
-            class="input-textarea"
-            name="comment"
-            placeholder="Enter your comment here..."
-          ></textarea>
-        </div>
-
-        <div class="form-group">
-          <button type="submit" id="submit" class="submit-button">
-            Submit
+    <section id="contact-me">
+      <h3>
+        I'm always <br />
+        interested in hearing about new projects, so if you'd like to chat
+        please get in touch.
+      </h3>
+      <form id="form" action="https://formspree.io/f/xgedjgpg" method="post">
+         <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Full Name"
+          maxlength="30"
+          required
+        />
+         <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Email Address"
+          required
+        />
+        <textarea
+          aria-label="write your message and I'll get back to you."
+          id="message"
+          name="message"
+          placeholder="Enter text here"
+          maxlength="500"
+        ></textarea>
+        <div class="submit-container">
+          <button
+            id="submit"
+            class="see-project"
+            type="submit">
+            Get in touch
           </button>
+          <div class="error"></div>
         </div>
       </form>
-    </div>
+    </section>
+    <footer class="footer">
+      <ul class="social-icons">
+        <li>
+          <a aria-label="github" href="#" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="linkedin" href="#" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="angellist" href="#" target="_blank"
+            ><i class="fa-brands fa-angellist"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="twitter" href="#" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="medium" href="#" target="_blank"
+            ><i class="fa-brands fa-medium"></i
+          ></a>
+        </li>
+      </ul>
+      <hr />
+    </footer>
+    <script defer src="script.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
